@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <link href="./assets/css/style.css" rel="stylesheet">
     </head>
     <body>
@@ -50,7 +51,7 @@
                             <h1 class="display-4 fw-bold">이것은 우리의 home section 부분!!</h1>
                             <p class="lead mt-2 mb-4">약간의 소개하는 내용이나 멘트같은 것을 넣어야 합니다.</p>
                             <a href="#popular-liquor" class="btn btn-brand me-3 ">대표 주류 소개</a>
-                            <a href"#" class="link-custom">전화번호 : 02-970-abcd</a>
+                            <a href"#popular-liquor" class="link-custom">전화번호 : 02-970-abcd</a>
                         </div>
                     </div>
                 </div>
@@ -334,62 +335,111 @@
             <!-- CONTACT -->
             <section id="contact" class="full-height px-lg-5">
                 <div class="container">
-
                     <div class="row justify-content-center text-center">
+                        <!-- contact의 제목부분 -->
                         <div class="col-lg-8 pb-4" data-aos="fade-up">
                             <h6 class="text-brand">CONTACT</h6>
                             <h1>관심있으면 연락주세요 페이지
                             </h1>
                         </div>
+                        <!-- contact의 제목 부분 끝-->
 
-                        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
-                            <form action="#" class="row g-lg-3 gy-3">
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" placeholder="이름">
+                        <!-- contact의 전화번호, 이메일, 위치 관련 부분-->
+                        <div class="row mt-4">
+                            <!-- item1(전화번호 및 운영시간)-->
+                            <div class="col-md-4">
+                                <div class="contact-icon text-center">
+                                    <div class="single-icon">
+                                        <i class="bi bi-phone"></i>
+                                        <p>
+                                            전화번호: +82) 02-000-0000<br>
+                                            <span>월요일-금요일 (9am-5pm)</span>
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="form-group col-md-6">
-                                    <input type="email" class="form-control" placeholder="이메일">
+                            </div>
+                            <!-- item2(이메일, 웹사이트 주소)-->
+                            <div class="col-md-4">
+                                <div class="contact-icon text-center">
+                                    <div class="single-icon">
+                                        <i class="bi bi-envelope"></i>
+                                        <p>
+                                            Email: example@swu.ac.kr<br>
+                                            <span>Web: www.example.com</span>
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="form-group col-12">
-                                    <input type="text" class="form-control" placeholder="제목">
-                                </div>
-                                <div class="form-group col-12">
-                                    <textarea name="" rows="4" class="form-control" placeholder="원하는 구체적 사유?"></textarea>
-                                </div>
-                                <div class="form-group col-12 d-grid">
-                                    <button type="submit" class="btn btn-brand">보내기!</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- FOOTER -->
-                    <footer class="py-5 px-lg-5">
-                        <div class="container">
-                            <div class="row gy-4 justify-content-between">
-                                <div class="col-auto">
-                                    <p class="mb-0">우선 이렇게 <a href="#" class="fw-bold">작성해둡니다.</a></p>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="social-icons">
-                                        <a href="#"><i class="lab la-twitter"></i></a>
-                                        <a href="#"><i class="lab la-instagram"></i></a>
-                                        <a href="#"><i class="lab la-dribbble"></i></a>
-                                        <a href="#"><i class="lab la-github"></i></a>
+                            </div>
+                            <!-- item3(위치) -->
+                            <div class="col-md-4">
+                                <div class="contact-icon text-center">
+                                    <div class="single-icon">
+                                        <i class="bi bi-geo-alt"></i>
+                                        <p>
+                                            위치: 서울여자대학교 50주년기념관<br>
+                                            <span>서울시 노원구, 대한민국</span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </footer>
-                    <!-- //FOOTER -->
+                        <!-- contact의 전화번호, 이메일, 위치 관련 부분 끝-->
 
 
+                        <!-- 좌측 구글 맵 -->
+                        <div class="col-md-6">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.9734134704577!2d127.09066417596944!3d37.6263131720232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cb91de277d145%3A0x57a8a7cc143ffb32!2z7ISc7Jq47Jes7J6Q64yA7ZWZ6rWQIDUw7KO864WE6riw64WQ6rSA!5e0!3m2!1sko!2skr!4v1686057628960!5m2!1sko!2skr"  width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <!-- 구글 맵 끝 -->
+
+                        <!-- Start  contact -->
+                        <div class="col-md-6">
+                            <div class="form contact-form">
+                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                </div>
+                                <div class="text-center my-3">
+                                    <button type="submit">전송(SEND)</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- //CONTACT -->
 
         </div>
         <!-- // 콘텐츠 영역 끝-->
-        
+        <!-- FOOTER -->
+        <footer class="py-5 px-lg-5">
+            <div class="container">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">우선 이렇게 <a href="#" class="fw-bold">작성해둡니다.</a></p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="social-icons">
+                            <a href="#"><i class="lab la-twitter"></i></a>
+                            <a href="#"><i class="lab la-instagram"></i></a>
+                            <a href="#"><i class="lab la-dribbble"></i></a>
+                            <a href="#"><i class="lab la-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //FOOTER -->
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
         <script src="./assets/js/main.js"></script>
