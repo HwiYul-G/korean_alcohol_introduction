@@ -1,10 +1,10 @@
 :root {
-    --color-body: red;
+    --color-body: #F4EEE0;
     --color-heading: white;
-    --color-base: orange;
-    --color-base2: yellow;
-    --color-brand: lightgreen;
-    --color-brand2: green;
+    --color-base: #4F4557;
+    --color-base2: #393646;
+    --color-brand: #6D5D6E;
+    --color-brand2: #19376D;
     --sidbar-width: 240px;
     --font-base: "Bai Jamjuree";
 }
@@ -62,8 +62,8 @@ img {
 }
 
 .iconbox {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,7 +95,7 @@ img {
     .navbar {
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8)), url(../images/sidebar-img.jpg);
+        background: linear-gradient(#393646, #6D5D6E), url(../images/sidebar-img.jpg);
         background-size: cover;
         background-position: center;
     }
@@ -162,6 +162,17 @@ img {
     transform: scale(1.1);
 }
 
+.card-custom-image {
+    width: 100%;
+    height: 170px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-base);
+    border-radius: 100px;
+    font-size: 24px;
+}
+
 /* CONTACT */
 #contact .form-control {
     background-color: var(--color-base);
@@ -188,12 +199,54 @@ img {
 } */
 
 .social-icons a {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     background-color: var(--color-base);
     border-radius: 100px;
     font-size: 24px;
+}
+
+/* carousel */
+.review-area {
+    padding: 50px 0;
+    position: relative;
+    margin: 120px 0;
+}
+.carousel-control.left, .carousel-control.right {
+    background: transparent;
+}
+.img-area {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.carousel-caption {
+    position: static;
+    padding-bottom: 15px;
+    padding-top : 5px;
+
+}
+.carousel-caption h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+.carousel-caption h4 {
+    color: yellow;
+}
+.carousel-caption p {
+    font-size: 18px;
+    margin: auto;
+    width: 70%;
+    margin-bottom: 10px;
+}
+.carousel-indicators {
+    bottom: -35px;
 }

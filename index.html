@@ -23,19 +23,13 @@
                             <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
+                            <a class="nav-link" href="#popular-liquor">Popular Liquor</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#work">Work</a>
+                            <a class="nav-link" href="#unusual-liquor">UNUSUAL Liquor</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#reviews">Reviews</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#blog">Blog</a>
+                            <a class="nav-link" href="#cluture">Drink cluture</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
@@ -55,7 +49,7 @@
                         <div class="col-lg-8">
                             <h1 class="display-4 fw-bold">이것은 우리의 home section 부분!!</h1>
                             <p class="lead mt-2 mb-4">약간의 소개하는 내용이나 멘트같은 것을 넣어야 합니다.</p>
-                            <a href="#work" class="btn btn-brand me-3 ">work 부분 보기</a>
+                            <a href="#popular-liquor" class="btn btn-brand me-3 ">대표 주류 소개</a>
                             <a href"#" class="link-custom">전화번호 : 02-970-abcd</a>
                         </div>
                     </div>
@@ -63,37 +57,35 @@
             </section>
             <!-- // Home -->
 
-            <!-- Services -->
-            <section id="services" class="full-height px-lg-5">
+            <!-- Popular Liquor -->
+            <section id="popular-liquor" class="full-height px-lg-5">
                 <div class="container">
     
                     <div class="row pb-4" data-aos="fade-up">
                         <div class="col-lg-8">
-                            <h6 class="text-brand">SERVICES</h6>
-                            <h1>서비스 영역 제목 부분</h1>
+                            <h6 class="text-brand">POPULAR LIQUOR</h6>
+                            <h1>한국 대표 주류</h1>
                         </div>
                     </div>
     
                     <div class="row gy-4">
-    
                         <div class="col-md-4" data-aos="fade-up">
                             <div class="service p-4 bg-base rounded-4 shadow-effect">
-                                <div class="iconbox rounded-4">
-                                    <!-- 빨간 네모 부분-->
-                                    <i class="las la-feather"></i>
+                                <div class="iconbox rounded-3">
+                                    <img src="./assets/images/soju.png" alt="소주 이미지">
                                 </div>
-                                <h5 class="mt-4 mb-2">카드1</h5>
+                                <h5 class="mt-4 mb-2">소주(Soju)</h5>
                                 <p>내용물 (설명하는 것)</p>
-                                <a href="#" class="link-custom">Read More</a>
+                                <a href="./soju.html" class="link-custom">Read More</a>
                             </div>
                         </div>
     
                         <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                             <div class="service p-4 bg-base rounded-4 shadow-effect">
-                                <div class="iconbox rounded-4">
-                                    <i class="las la-pencil-ruler"></i>
+                                <div class="iconbox rounded-3">
+                                    <img src="" alt="">
                                 </div>
-                                <h5 class="mt-4 mb-2">카드2</h5>
+                                <h5 class="mt-4 mb-2">맥주(Beer)</h5>
                                 <p>설명부분</p>
                                 <a href="#" class="link-custom">Read More</a>
                             </div>
@@ -101,64 +93,108 @@
     
                         <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
                             <div class="service p-4 bg-base rounded-4 shadow-effect">
-                                <div class="iconbox rounded-4">
-                                    <i class="las la-laptop-code"></i>
+                                <div class="iconbox rounded-3">
+                                    <img src="" alt="">
                                 </div>
-                                <h5 class="mt-4 mb-2">카드3</h5>
+                                <h5 class="mt-4 mb-2">막걸리(Makgeolli)</h5>
                                 <p>설명부분</p>
                                 <a href="#" class="link-custom">Read More</a>
                             </div>
                         </div>
-    
                     </div>
-    
+                    
+                    <!-- 리뷰 -->
+                    <div class="review-area row mt-1">
+                        <h1>Reviews</h1>
+                        <div id="review-carousel" class="carousel slide" data-bs-ride="carousel">
+                            <!-- indicator -->
+                            <div class="carousel-indicators">
+                                <button data-bs-target="#review-carousel" data-bs-slide-to="0" class="active"></button>
+                                <button data-bs-target="#review-carousel" data-bs-slide-to="1"></button>
+                                <button data-bs-target="#review-carousel" data-bs-slide-to="2"></button>
+                            </div>
+                            <!-- indcator 끝 -->
+                            <!-- inner 영역 -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="img-area active">
+                                        <img src="./assets/images/soju.png" alt="">
+                                    </div>
+                                    <div class="carousel-caption active">
+                                        <h3>Jason Doe</h3>
+                                        <h4>Web Developer</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Rem consequatur repellendus ipsa, similique ea incidunt consequuntur 
+                                            quidem inventore nesciunt commodi culpa, fugiat dicta maxime 
+                                            laboriosam reprehenderit itaque accusantium repellat tenetur?
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="img-area">
+                                        <img src="./assets/images/soju.png" alt="">
+                                    </div>
+                                    <div class="carousel-caption">
+                                        <h3>22222222</h3>
+                                        <h4>Web Developer2</h4>
+                                        <p>2Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Rem consequatur repellendus ipsa, similique ea incidunt consequuntur 
+                                            quidem inventore nesciunt commodi culpa, fugiat dicta maxime 
+                                            laboriosam reprehenderit itaque accusantium repellat tenetur?
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="img-area">
+                                        <img src="./assets/images/soju.png" alt="">
+                                    </div>
+                                    <div class="carousel-caption">
+                                        <h3>3333333</h3>
+                                        <h4>3Web Developer</h4>
+                                        <p>3Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Rem consequatur repellendus ipsa, similique ea incidunt consequuntur 
+                                            quidem inventore nesciunt commodi culpa, fugiat dicta maxime 
+                                            laboriosam reprehenderit itaque accusantium repellat tenetur?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- inner 영역 끝 -->
+                            <button class="carousel-control-prev" data-bs-target="#review-carousel"  data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" data-bs-target="#review-carousel"  data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- 리뷰 끝 -->
+
                 </div>
             </section>
-            <!-- //Services -->
-            <!-- WORK -->
-            <section id="work" class="full-height px-lg-5">
+            <!-- //Popular Liquor -->
+
+            <!-- Unusal Liquor -->
+            <section id="unusual-liquor" class="full-height px-lg-5">
                 <div class="container">
                     <div class="row pb-4" data-aos="fade-up">
                         <div class="col-lg-8">
-                            <h6 class="text-brand">WORK</h6>
-                            <h1>WORK부분 제목 영역</h1>
+                            <h6 class="text-brand">UNUSAL LIQUOR</h6>
+                            <h1>이색적인 주류 소개 부분</h1>
                         </div>
                     </div>
+                    <!-- 예산사과와인,  두레앙 거봉 포도와인, 단감명장, 홍국으로 만든 '붉은 원숭이' 막걸리 -->
 
-                    <div class="row gy-4">
-                        <div class="col-md-6" data-aos="fade-up">
-                            <div class="card-custom rounded-4 bg-base shadow-effect">
-                                <div class="card-custom-image rounded-4">
-                                    <img class="rounded-4" src="./assets/images/project-1.jpg" alt="">
-                                </div>
-                                <div class="card-custom-content p-4">
-                                    <h4>카드 부분 1</h4>
-                                    <p>조금 긴 설명</p>
-                                    <a href="#" class="link-custom">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-
+                    <div class="row g-4">
                         <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                             <div class="card-custom rounded-4 bg-base shadow-effect">
                                 <div class="card-custom-image rounded-4">
-                                    <img class="rounded-4" src="./assets/images/project-2.png" alt="">
+                                    <img class="rounded-4" src="./assets/images/예산사과와인.jpeg" alt="예산 사과 와인 이미지">
                                 </div>
                                 <div class="card-custom-content p-4">
-                                    <h4>카드부분2</h4>
-                                    <p>조금 긴 설명</p>
-                                    <a href="#" class="link-custom">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6" data-aos="fade-up">
-                            <div class="card-custom rounded-4 bg-base shadow-effect">
-                                <div class="card-custom-image rounded-4">
-                                    <img class="rounded-4" src="./assets/images/project-3.png" alt="">
-                                </div>
-                                <div class="card-custom-content p-4">
-                                    <h4>카드부분3</h4>
+                                    <h4>예산 사과 와인</h4>
                                     <p>긴설명</p>
                                     <a href="#" class="link-custom">Read More</a>
                                 </div>
@@ -168,10 +204,36 @@
                         <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                             <div class="card-custom rounded-4 bg-base shadow-effect">
                                 <div class="card-custom-image rounded-4">
-                                    <img class="rounded-4" src="./assets/images/project-4.png" alt="">
+                                    <img class="rounded-4" src="./assets/images/붉은원숭이.png" alt="붉은원숭이 막걸리 이미지">
                                 </div>
                                 <div class="card-custom-content p-4">
-                                    <h4>카3</h4>
+                                    <h4>붉은 원숭이 막걸리</h4>
+                                    <p>긴설명</p>
+                                    <a href="#" class="link-custom">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-custom rounded-4 bg-base shadow-effect">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4" src="./assets/images/두레앙와인.jpg" alt="두레앙 와인 이미지">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4>두레앙 와인</h4>
+                                    <p>긴설명</p>
+                                    <a href="#" class="link-custom">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-custom rounded-4 bg-base shadow-effect">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4" src="./assets/images/단감명작.png" alt="단감명작 이미지">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4>단감명작</h4>
                                     <p>긴설명</p>
                                     <a href="#" class="link-custom">Read More</a>
                                 </div>
@@ -181,16 +243,16 @@
 
                 </div>
             </section>
-            <!-- //WORK -->
+            <!-- //Unusual Liquor -->
 
-            <!-- ABOUT -->
-            <section id="about" class="full-height px-lg-5">
+            <!-- 주류 관련 문화 -->
+            <section id="cluture" class="full-height px-lg-5">
                 <div class="container">
 
                     <div class="row pb-4" data-aos="fade-up">
                         <div class="col-lg-8">
-                            <h6 class="text-brand">ABOUT</h6>
-                            <h1>My Education & Experiance</h1>
+                            <h6 class="text-brand">DRINK CLUTURE</h6>
+                            <h1>주류 관련 행사나 이것저것 소개하는 부분</h1>
                         </div>
                     </div>
 
@@ -265,141 +327,9 @@
 
                 </div>
             </section>
-            <!-- //ABOUT -->
+            <!-- //주류 관련 문화 -->
 
-            <!-- REVIEWS -->
-            <section id="reviews" class="full-height px-lg-5">
-                <div class="container">
 
-                    <div class="row pb-4" data-aos="fade-up">
-                        <div class="col-lg-8">
-                            <h6 class="text-brand">REVIEWS</h6>
-                            <h1>구매 경험자들의 생생한 후기</h1>
-                        </div>
-                    </div>
-
-                    <div class="row gy-4">
-
-                        <div class="col-md-4" data-aos="fade-up">
-
-                            <div class="review shadow-effect bg-base p-4 rounded-4">
-                                <div class="text-brand h5">
-                                    <i class="las la-star"></i>
-                                    <i class="las la-star"></i>
-                                    <i class="las la-star"></i>
-                                    <i class="las la-star"></i>
-                                    <i class="las la-star"></i>
-                                </div>
-                                <p class="my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quae facilis fugiat molestias ab illum excepturi, qui optio modi asperiores, delectus maiores!</p>
-                                <div class="person">
-                                    <h5 class="mb-0">Jon Doe</h5>
-                                    <p class="mb-0">Twitter</p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-
-                            <div class="review shadow-effect bg-base p-4 rounded-4">
-                                <div class="text-brand h5">
-                                    <i class="las la-star"></i>
-                                    <i class="las la-star"></i>
-                                    <i class="las la-star"></i>
-                                    <i class="las la-star"></i>
-                                    <i class="las la-star"></i>
-                                </div>
-                                <p class="my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quae facilis fugiat molestias ab illum excepturi, qui optio modi asperiores, delectus maiores!</p>
-                                <div class="person">
-                                    <h5 class="mb-0">Jon Doe</h5>
-                                    <p class="mb-0">Twitter</p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-
-                            <div class="review shadow-effect bg-base p-4 rounded-4">
-                                <div class="text-brand h5">
-                                    <i class="las la-star"></i>
-                                    <i class="las la-star"></i>
-                                    <i class="las la-star"></i>
-                                    <i class="las la-star"></i>
-                                    <i class="las la-star"></i>
-                                </div>
-                                <p class="my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quae facilis fugiat molestias ab illum excepturi, qui optio modi asperiores, delectus maiores!</p>
-                                <div class="person">
-                                    <h5 class="mb-0">Jon Doe</h5>
-                                    <p class="mb-0">Twitter</p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
-            <!-- //REVIEWS -->
-
-            <!-- BLOG -->
-            <section id="blog" class="full-height px-lg-5">
-                <div class="container">
-
-                    <div class="row pb-4" data-aos="fade-up">
-                        <div class="col-lg-8">
-                            <h6 class="text-brand">BLOG</h6>
-                            <h1>My BLog Posts</h1>
-                        </div>
-                    </div>
-
-                    <div class="row gy-4">
-
-                        <div class="col-md-4" data-aos="fade-up">
-                            <div class="card-custom rounded-4 bg-base shadow-effect">
-                                <div class="card-custom-image rounded-4">
-                                    <img class="rounded-4" src="./assets/images/blog-post-1.jpg" alt="">
-                                </div>
-                                <div class="card-custom-content p-4">
-                                    <p class="text-brand mb-2">20 Dec, 2022</p>
-                                    <h5 class="mb-4">추천 블로그 포스트 1 </h5>
-                                    <a href="#" class="link-custom">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                            <div class="card-custom rounded-4 bg-base shadow-effect">
-                                <div class="card-custom-image rounded-4">
-                                    <img class="rounded-4" src="./assets/images/blog-post-2.jpg" alt="">
-                                </div>
-                                <div class="card-custom-content p-4">
-                                    <p class="text-brand mb-2">20 Dec, 2022</p>
-                                    <h5 class="mb-4">추천 블로그 포스트 1</h5>
-                                    <a href="#" class="link-custom">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                            <div class="card-custom rounded-4 bg-base shadow-effect">
-                                <div class="card-custom-image rounded-4">
-                                    <img class="rounded-4" src="./assets/images/blog-post-3.jpg" alt="">
-                                </div>
-                                <div class="card-custom-content p-4">
-                                    <p class="text-brand mb-2">20 Dec, 2022</p>
-                                    <h5 class="mb-4">추천 블로그 포스트 1</h5>
-                                    <a href="#" class="link-custom">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
-            <!-- //BLOG -->
 
             <!-- CONTACT -->
             <section id="contact" class="full-height px-lg-5">
