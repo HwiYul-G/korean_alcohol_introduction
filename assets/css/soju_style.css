@@ -9,43 +9,31 @@
     --font-base: "Bai Jamjuree";
 }
 
-header {
-    background-color: var(--color-base2);
+p {
+    padding: 0;
+    margin: 0 0 30px 0;
 }
+
+
 
 /* NavBar */
-.navbar {
-    background-color: var(--color-base2);
-}
-.navbar a {
-    color : white;
+nav {
+    background-color: var(--color-base);
 }
 
-.navbar .nav-item {
-    margin-left: 45px;
+.navbar .nav-link {
+    font-weight: 700;
+    color : #fff;
 }
 
-.navbar .nav-item .nav-link {
-    padding: 5px 0;
-    position : relative;
+.navbar .nav-link:hover {
+    color: var(--color-brand);
 }
 
-.navbar .nav-item .nav-link::before {
-    content : '';
-    position: absolute;
-    left : 0;
-    right : 0;
-    bottom: 0;
-    height: 1px;
-    background-color: #E6E6E6;
-    transition: all 0.5s ease;
-    transform: scale(0);
+.navbar .nav-link.active {
+    color: var(--color-brand);
 }
 
-.navbar .nav-item .nav-link.active::before,
-.navbar .nav-item .nav-link:hover::before {
-    transition : scale(1);
-}
 
 /* making : 소주 제조 과정 부분 */
 #making {
@@ -55,6 +43,118 @@ header {
     overflow: hidden;
     position: relative;
 }
+
+#making .making-container {
+    position: absolute;
+    bottom : 0;
+    left : 0;
+    top : 90px;
+    right : 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+}
+
+#making h1 {
+    color : #fff;
+    font-family : var(--font-base);
+    font-size : 56px;
+    font-weight: 600;
+}
+#making h1 span {
+    color: #f82249;
+}
+#making p {
+    color: #ebebeb;
+    font-weight: 700;
+    font-size: 20px;
+}
+
 /* history : 소주 역사 부분 */
+#history {
+    padding : 60px 0 60px 0;
+}
+
+#history .history-item {
+    border-bottom: 1px solid #cad4f6;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: background-color ease-in-out 0.3s;
+}
+
+#history .history-item:hover {
+    background-color: #fff;
+}
+
+#history .history-item time {
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+#history .history-item h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#history .history-item p {
+    font-style: italic;
+    color: #152b79;
+    margin-bottom: 0;
+}
+
 /* brand : 다양한 브랜드 부분 */
+#brand {
+    padding : 60px 0;
+}
+#brand .brand-wrap {
+    border-top: 1px solid #e0e5fa;
+    border-left: 1px solid #e0e5fa;
+    margin-bottom: 30px;
+}
+#brand .brand-logo {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #e0e5fa;
+    border-bottom: 1px solid #e0e5fa;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.5);
+    height: 160px;
+}
+#brand .brand-logo:hover img {
+    transform: scale(1.2);
+}
+#brand img {
+    transition: all 0.4s ease-in-out;
+}
+
+
 /* foods : 어울리는 안주 부분 */
+#foods {
+    padding : 60px 0;
+}
+#foods .container-fluid {
+    margin-bottom: 3px;
+}
+
+#foods .foods-container {
+    padding-right: 12px;
+}
+
+#foods .food {
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+
+#foods .food:hover img {
+    transition: all ease-in-out 0.4s;
+}
+#foods .food:hover img {
+    transform: scale(1.1);
+}
