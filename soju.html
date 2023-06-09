@@ -7,22 +7,267 @@
         <link rel="stylesheet" href="./assets/css/soju_style.css">
     </head>
     <body>
-        <h1>소주 소개 페이지 등 제목 작성 필요</h1>
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#"><img src="" alt="로고 이미지"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         
-        <div class="container">
-            <section>
-                <img src="./assets/images/soju.png" alt="소주 이미지">
-                <div>
-                    <h1>소주</h1>
-                    <p>소주 소개 내용 다소 길게 작성할 필요 있음??</p>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#making">제조 과정 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#history">소주 역사</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#brand">다양한 소주 브랜드</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#foods">어울리는 안주</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!-- ======= 소주 제조 과정 부분 ======= -->
+        <section id="making">
+            <div class="making-container">
+                <h1 class="mb-4 pb-0">소주<br><span>제조 과정</span> 보기</h1>
+                <p class="mb-4 pb-0">소주 어떻게 만들어 지는 지 알고 먹어요!</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kgcw9A-Dvvg" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        <!-- 소주 제조 과정 부분 끝 -->
+        
+        <main id="main">
+            <!-- ======= 소주 역사 부분 ======= -->
+            <section id="history" class="section-with-bg">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-header">
+                        <h2>소주 역사</h2>
+                        <p>소주의 역사를 소개합니다.</p>
+                    </div>
+
+                    <h3 class="sub-heading">
+                        우리의 소주는 어떻게 탄생했을까?
+                    </h3>
+
+                    <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+                        <!-- 소주 역사 내용 부분 -->
+                        <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="history-content">
+
+                            <div class="row history-item">
+                                <div class="col-md-2"><time>년도</time></div>
+                                <div class="col-md-10">
+                                    <h4>큰제목</h4>
+                                    <p>관련 내용 작성</p>
+                                </div>
+                            </div>
+
+                            <div class="row history-item">
+                                <div class="col-md-2"><time>년도</time></div>
+                                <div class="col-md-10">
+                                    <h4>큰제목</h4>
+                                    <p>관련 내용 작성</p>
+                                </div>
+                            </div>
+
+
+                            <div class="row history-item">
+                                <div class="col-md-2"><time>년도</time></div>
+                                <div class="col-md-10">
+                                    <h4>큰제목</h4>
+                                    <p>관련 내용 작성</p>
+                                </div>
+                            </div>
+
+
+                            <div class="row history-item">
+                                <div class="col-md-2"><time>년도</time></div>
+                                <div class="col-md-10">
+                                    <h4>큰제목</h4>
+                                    <p>관련 내용 작성</p>
+                                </div>
+                            </div>
+
+
+                            <div class="row history-item">
+                                <div class="col-md-2"><time>년도</time></div>
+                                <div class="col-md-10">
+                                    <h4>큰제목</h4>
+                                    <p>관련 내용 작성</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 소주 역사 내용 부분 끝 -->
+                    </div>
+
                 </div>
             </section>
+            <!-- 소주 역사 부분 -->
 
-            <section>
-                <h1>제조 과정</h1>
+            <!-- ======= 브랜드 소개 부분 ======= -->
+            <section id="brand" class="section-with-bg">
+
+                <div class="container" data-aos="fade-up">
+                    <div class="section-header">
+                        <h2>Brands</h2>
+                    </div>
+
+                    <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="brand-logo">
+                                <img src="./assets/images/soju-page-images/대선.jpg" class="img-fluid" alt="대선 소주 이미지">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="brand-logo">
+                                <img src="./assets/images/soju-page-images/시원한 청풍.jpg" class="img-fluid" alt="시원한 청풍 이미지">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="brand-logo">
+                                <img src="./assets/images/soju-page-images/이제우린.png" class="img-fluid" alt="이제 우린 이미지">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="brand-logo">
+                                <img src="./assets/images/soju-page-images/잎새주.jpg" class="img-fluid" alt="잎새주 이미지">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="brand-logo">
+                                <img src="./assets/images/soju-page-images/참소주.jpg" class="img-fluid" alt="참소주 이미지">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="brand-logo">
+                                <img src="./assets/images/soju-page-images/처음처럼.jpg" class="img-fluid" alt="처음처럼 이미지">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="brand-logo">
+                                <img src="./assets/images/soju-page-images/하이트진로.png" class="img-fluid" alt="하이트진로이미지">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="brand-logo">
+                                <img src="./assets/images/soju-page-images/한라산.jpg" class="img-fluid" alt="한라산이미지">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </section>
+            <!-- 브랜드 소개 끝 -->
 
-        </div>
+
+            <!-- ======= 어울리는 안주 소개 부분 ======= -->
+            <section id="foods">    
+
+                <div class="container-fluid" data-aos="fade-up">
+                    <div class="section-header">
+                        <h2>Food with soju</h2>
+                        <p>소주와 어울리는 안주, 먹거리를 소개합니다.</p>
+                    </div>
+                </div>
+
+                <div class="container-fluid foods-container" data-aos="fade-up" data-aos-delay="100">
+                    <div class="row g-0">
+
+                        <div class="col-lg-3 col-md-4">
+                            <div class="food">
+                                <a href="./assets/images/soju-page-images/골뱅이.jpg" class="glightbox" data-gall="food">
+                                    <img src="./assets/images/soju-page-images/골뱅이.jpg" alt="골뱅이 이미지" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4">
+                            <div class="food">
+                                <a href="" class="glightbox" data-gall="food">
+                                    <img src="" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4">
+                            <div class="food">
+                                <a href="" class="glightbox" data-gall="food">
+                                    <img src="" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4">
+                            <div class="food">
+                                <a href="" class="glightbox" data-gall="food">
+                                    <img src="" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4">
+                            <div class="food">
+                                <a href="" class="glightbox" data-gall="food">
+                                    <img src="" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4">
+                            <div class="food">
+                                <a href="" class="glightbox" data-gall="food">
+                                    <img src="" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4">
+                            <div class="food">
+                                <a href="" class="glightbox" data-gall="food">
+                                    <img src="" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4">
+                            <div class="food">
+                                <a href="" class="glightbox" data-gall="food">
+                                    <img src="" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+            <!-- 어울리는 안주 소개 부분 끝 -->
+
+        </main>
+
+
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
         <script src="./assets/js/main.js"></script>
