@@ -4,39 +4,45 @@
         <meta charset="utf-8">
         <title>소주 소개</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <link rel="stylesheet" href="./assets/css/soju_style.css">
     </head>
     <body>
-        <!-- Navbar 시작-->
+        <!-- 네비게이션바 시작 -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <a class="navbar-brand" href="./soju.html">소주</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="container">
+            <a class="navbar-brand mx-lg-auto mb-lg-1" href="./index.html">
+                <span class="h3 fw-bold d-block d-lg-none">
+                    Budweizo
+                </span>
+                <img src="./assets/images/budweizo logo.png" class="d-none d-lg-block" alt="로고 이미지">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-        
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#making">제조 과정 <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#history">소주 역사</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#brand">다양한 소주 브랜드</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#foods">어울리는 안주</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto  text-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#making">제조 과정</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">소주 Q&A</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#brand">브랜드</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#foods">소주에 어울리는 음식</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <!-- Navbar 끝 -->
+        <!-- // 네비게이션바 끝 -->
         
         <main id="main">
             <!-- ======= 소주 제조 과정 부분 ======= -->
-            <section id="making">
+            <section id="making" class="full-height">
                 <div class="making-container">
                     <h1 class="mb-4 pb-0">소주<br><span>제조 과정</span> 보기</h1>
                     <p class="mb-4 pb-0">소주 어떻게 만들어 지는 지 알고 먹어요!</p>
@@ -50,67 +56,74 @@
             <!-- 소주 제조 과정 부분 끝 -->
 
             <!-- ======= 소주 역사 부분 ======= -->
-            <section id="history" class="section-with-bg">
+            <section id="faq" class="section-with-bg full-height">
                 <div class="container" data-aos="fade-up">
                     <div class="section-header">
-                        <h2>소주 역사</h2>
-                        <p>소주의 역사를 소개합니다.</p>
+                        <h2>F.A.Q</h2>
                     </div>
 
-                    <h3 class="sub-heading">
-                        우리의 소주는 어떻게 탄생했을까?
-                    </h3>
-
-                    <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
-
-                        <!-- 소주 역사 내용 부분 -->
-                        <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="history-content">
-
-                            <div class="row history-item">
-                                <div class="col-md-2"><time>년도</time></div>
-                                <div class="col-md-10">
-                                    <h4>큰제목</h4>
-                                    <p>관련 내용 작성</p>
+                    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="col-lg-9">
+            
+                            <ul class="faq-list">
+                
+                                <li>
+                                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">소주 칼로리는 어떻게 되나요? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                                <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                                    </p>
                                 </div>
-                            </div>
-
-                            <div class="row history-item">
-                                <div class="col-md-2"><time>년도</time></div>
-                                <div class="col-md-10">
-                                    <h4>큰제목</h4>
-                                    <p>관련 내용 작성</p>
+                                </li>
+                
+                                <li>
+                                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                                <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                    </p>
                                 </div>
-                            </div>
-
-
-                            <div class="row history-item">
-                                <div class="col-md-2"><time>년도</time></div>
-                                <div class="col-md-10">
-                                    <h4>큰제목</h4>
-                                    <p>관련 내용 작성</p>
+                                </li>
+                
+                                <li>
+                                <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                                <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                    </p>
                                 </div>
-                            </div>
-
-
-                            <div class="row history-item">
-                                <div class="col-md-2"><time>년도</time></div>
-                                <div class="col-md-10">
-                                    <h4>큰제목</h4>
-                                    <p>관련 내용 작성</p>
+                                </li>
+                
+                                <li>
+                                <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                                <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                    </p>
                                 </div>
-                            </div>
-
-
-                            <div class="row history-item">
-                                <div class="col-md-2"><time>년도</time></div>
-                                <div class="col-md-10">
-                                    <h4>큰제목</h4>
-                                    <p>관련 내용 작성</p>
+                                </li>
+                
+                                <li>
+                                <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                                <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                                    </p>
                                 </div>
-                            </div>
-
+                                </li>
+                
+                                <li>
+                                <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                                <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                                    </p>
+                                </div>
+                                </li>
+                
+                            </ul>
+                
                         </div>
-                        <!-- 소주 역사 내용 부분 끝 -->
                     </div>
 
                 </div>
@@ -118,7 +131,7 @@
             <!-- 소주 역사 부분 -->
 
             <!-- ======= 브랜드 소개 부분 ======= -->
-            <section id="brand" class="section-with-bg">
+            <section id="brand" class="section-with-bg full-height">
 
                 <div class="container" data-aos="fade-up">
                     <div class="section-header">
@@ -184,7 +197,7 @@
 
 
             <!-- ======= 어울리는 안주 소개 부분 ======= -->
-            <section id="foods">    
+            <section id="foods" class="full-height">    
 
                 <div class="container-fluid" data-aos="fade-up">
                     <div class="section-header">
@@ -193,7 +206,7 @@
                     </div>
                 </div>
 
-                <div class="container-fluid foods-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="container-fluid foods-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                     <div class="row g-0">
 
                         <div class="col-lg-3 col-md-4">
@@ -206,56 +219,56 @@
 
                         <div class="col-lg-3 col-md-4">
                             <div class="food">
-                                <a href="" class="glightbox" data-gall="food">
-                                    <img src="" alt="" class="img-fluid">
+                                <a href="./assets/images/soju-page-images/gul.png" class="glightbox" data-gall="food">
+                                    <img src="./assets/images/soju-page-images/gul.png" alt="굴 이미지" class="img-fluid">
                                 </a>
                             </div>
                         </div>
 
                         <div class="col-lg-3 col-md-4">
                             <div class="food">
-                                <a href="" class="glightbox" data-gall="food">
-                                    <img src="" alt="" class="img-fluid">
+                                <a href="./assets/images/soju-page-images/jok-bal.png" class="glightbox" data-gall="food">
+                                    <img src="./assets/images/soju-page-images/jok-bal.png" alt="족발 이미지" class="img-fluid">
                                 </a>
                             </div>
                         </div>
 
                         <div class="col-lg-3 col-md-4">
                             <div class="food">
-                                <a href="" class="glightbox" data-gall="food">
-                                    <img src="" alt="" class="img-fluid">
+                                <a href="./assets/images/soju-page-images/maeuntang.png" class="glightbox" data-gall="food">
+                                    <img src="./assets/images/soju-page-images/maeuntang.png" alt="매운탕 이미지" class="img-fluid">
                                 </a>
                             </div>
                         </div>
 
                         <div class="col-lg-3 col-md-4">
                             <div class="food">
-                                <a href="" class="glightbox" data-gall="food">
-                                    <img src="" alt="" class="img-fluid">
+                                <a href="./assets/images/soju-page-images/gimchizzigae.png" class="glightbox" data-gall="food">
+                                    <img src="./assets/images/soju-page-images/gimchizzigae.png" alt="김치찌개 이미지" class="img-fluid">
                                 </a>
                             </div>
                         </div>
 
                         <div class="col-lg-3 col-md-4">
                             <div class="food">
-                                <a href="" class="glightbox" data-gall="food">
-                                    <img src="" alt="" class="img-fluid">
+                                <a href="./assets/images/soju-page-images/zumulluck.png" class="glightbox" data-gall="food">
+                                    <img src="./assets/images/soju-page-images/zumulluck.png" alt="주물럭 이미지" class="img-fluid">
                                 </a>
                             </div>
                         </div>
 
                         <div class="col-lg-3 col-md-4">
                             <div class="food">
-                                <a href="" class="glightbox" data-gall="food">
-                                    <img src="" alt="" class="img-fluid">
+                                <a href="./assets/images/soju-page-images/nakgi.png" class="glightbox" data-gall="food">
+                                    <img src="./assets/images/soju-page-images/nakgi.png" alt="낙지 이미지" class="img-fluid">
                                 </a>
                             </div>
                         </div>
 
                         <div class="col-lg-3 col-md-4">
                             <div class="food">
-                                <a href="" class="glightbox" data-gall="food">
-                                    <img src="" alt="" class="img-fluid">
+                                <a href="./assets/images/soju-page-images/pork.png" class="glightbox" data-gall="food">
+                                    <img src="./assets/images/soju-page-images/pork.png" alt="삼겹살 이미지" class="img-fluid">
                                 </a>
                             </div>
                         </div>

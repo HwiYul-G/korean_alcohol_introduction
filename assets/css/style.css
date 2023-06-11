@@ -200,6 +200,11 @@ img {
     height: 170px;
 }
 
+.card-custom-content-culture p {
+    color : #F4EEE0;
+
+}
+
 /* CONTACT */
 #contact .form-control {
     background-color: var(--color-base);
