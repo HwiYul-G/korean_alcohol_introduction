@@ -279,3 +279,17 @@ img {
 .carousel-indicators {
     bottom: -35px;
 }
+
+/* footer */
+.bi-facebook {
+    color: #3B5998
+}
+.bi-twitter {
+    color: #00ACEE
+}
+.bi-youtube {
+    color: #FF0000
+}
+.bi-linkedin {
+    color: #0E76A8
+}

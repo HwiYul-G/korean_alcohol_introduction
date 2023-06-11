@@ -236,3 +236,9 @@ nav {
     transform: scale(1.1);
 }
 
+/* footer */
+footer {
+    background-color: var(--color-base);
+    text-align: center;
+}
+
