@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Budweizo - intrduction liquor</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="./assets/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- 네비게이션바 시작 -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container flex-lg-column">
+            <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+                <span class="h3 fw-bold d-block d-lg-none">Budweizo</span>
+                <img src="./assets/images/budweizo logo.png" class="d-none d-lg-block" alt="로고 이미지">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#popular-liquor">Popular Liquor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#unusual-liquor">UNUSUAL Liquor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#culture">Drink culture</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- // 네비게이션바 끝 -->
+
+        <!-- 콘텐츠 영역 시작 -->
+        <div id="content-wrapper">
+
+            <!-- Home -->
+            <section id="home" class="full-height px-lg-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h1 class="display-4 fw-bold">술을 제대로 즐기고 싶은 당신을 위해!</h1>
+                            <p class="lead mt-2 mb-4">저희는 항상 술과 인접해 있습니다. 
+                                <br>보다 더 다양한 술을 즐기기 위해, 
+                                <br>보다 더 내게 맞는 술자리 문화를 고수하기 위해 
+                                <br>소개합니다.</p>
+                            <a href="#popular-liquor" class="btn btn-brand me-3 ">맛있는 우리 술 소개</a>
+                            <a href="#contact" class="link-custom">전화번호 : 02-970-abcd</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- // Home -->
+
+            <!-- Popular Liquor -->
+            <section id="popular-liquor" class="full-height px-lg-5">
+                <div class="container">
+    
+                    <div class="row pb-4" data-aos="fade-up">
+                        <div class="col-lg-8">
+                            <h6 class="text-brand">POPULAR LIQUOR</h6>
+                            <h1>한국 대표 주류</h1>
+                        </div>
+                    </div>
+    
+                    <div class="row gy-4">
+
+                        <div class="col-md-4" data-aos="fade-up">
+                            <div class="service p-4 bg-base rounded-4 shadow-effect">
+                                <div class="iconbox rounded-3">
+                                    <img src="./assets/images/soju icon.png" alt="소주 이미지">
+                                </div>
+                                <h5 class="mt-4 mb-2">소주 (Soju)</h5>
+                                <p>한국의 전통주이며, 증류주에 해당한다. 원래는 증류식 소주를 의미했으나 최근에는 희석식 소주가 대중화되며 이를 의미하게 되었다.</p>
+                                <a href="./soju.html" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                            <div class="service p-4 bg-base rounded-4 shadow-effect">
+                                <div class="iconbox rounded-3">
+                                    <img src="./assets/images/mak icon.png" alt="막걸리 이미지">
+                                </div>
+                                <h5 class="mt-4 mb-2">막걸리 (Makgeolli)</h5>
+                                <p>소주와 마찬가지로 한국의 전통주이며, 양조주에 해당한다. 쌀로 밑술을 담근 후 청주를 걸러내고, 남은 술지게미를 다시 체에 걸러 만든다.</p>
+                                <a href="./makgeolli.html" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="service p-4 bg-base rounded-4 shadow-effect">
+                                <div class="iconbox rounded-3">
+                                    <img src="./assets/images/mac icon.png" alt="맥주 이미지">
+                                </div>
+                                <h5 class="mt-4 mb-2">맥주 (Beer)</h5>
+                                <p>곡물로 만든 맥아를 발효시키고 향신료인 홉을 첨가하여 맛을 낸 양조주이다. 포도주와 함께 세계에서 가장 대중화된 주류이다.</p>
+                                <a href="./beer.html" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- //Popular Liquor -->
+
+            <!-- Unusal Liquor -->
+            <section id="unusual-liquor" class="full-height px-lg-5">
+                <div class="container">
+                    <div class="row pb-4" data-aos="fade-up">
+                        <div class="col-lg-8">
+                            <h6 class="text-brand">UNUSAL LIQUOR</h6>
+                            <h1>이색 주류</h1>
+                        </div>
+                    </div>
+
+                    <div class="row g-4">
+                        <!-- 추사40 -->
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-custom rounded-4 bg-base shadow-effect">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4" src="./assets/images/chusa40.jpg" alt="애플 브랜디 이미지">
+                                </div>
+                                <div class=" p-4">
+                                    <h4>추사 40</h4>
+                                    <p>예산 사과 와인을 증류하여 오크통에 숙성한 애플 브랜디</p>
+                                    <a href="https://www.sooldamhwa.com/damhwaMarket/detail/81" class="link-custom" target="_blank">Buy now!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 김창수 위스키 -->
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-custom rounded-4 bg-base shadow-effect">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4" src="./assets/images/KimChangSu-whiskey.jfif" alt="김창수 위스키 이미지">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4>김창수 위스키</h4>
+                                    <p>국내 최초의 싱글몰트 위스키</p>
+                                    <a href="https://dailyshot.co/pickup/products/2450/detail/" class="link-custom" target="_blank">Buy now!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 두레앙 거봉 포도와인 -->
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-custom rounded-4 bg-base shadow-effect">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4" src="./assets/images/dureang wine.jpg" alt="두레앙 와인 이미지">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4>두레앙 와인</h4>
+                                    <p>천안의 거봉 포도로 만들어진 레드와인</p>
+                                    <a href="https://www.paiksool.com/goods/goods_view.php?goodsNo=100000046" class="link-custom" target="_blank">Buy now!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 단감명작 -->
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-custom rounded-4 bg-base shadow-effect">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4" src="./assets/images/dan-gam-mung-jak.png" alt="단감명작 이미지">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4>단감명작</h4>
+                                    <p>창녕 단감으로 만들어진 화이트와인</p>
+                                    <a href="https://dailyshot.co/pickup/products/1415/detail/" class="link-custom" target="_blank">Buy now!</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <!-- //Unusual Liquor -->
+
+            <!-- 주류 관련 문화 -->
+            <section id="culture" class="full-height px-lg-5">
+                <div class="container">
+
+                    <div class="row pb-4" data-aos="fade-up">
+                        <div class="col-lg-8">
+                            <h6 class="text-brand">DRINK CULTURE</h6>
+                            <h1>술을 더 재밌고 풍성하게 즐기려면?</h1>
+                        </div>
+                    </div>
+
+                    <div class="row gy-5">
+                        <!-- 추천서비스 -->
+                        <div class="col-lg-6">
+                            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Recommendation</h3>
+                            <div class="row gy-4 gx-5">
+
+                                <!-- 술담화 -->
+                                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="card-custom card flex-row rounded-4 bg-base shadow-effect">
+                                        <div class="card-custom-image-culture rounded-4 col-6">
+                                            <img class="card-img-left img-fluid" src="./assets/images/sul-dam-wa.jfif" alt="술담화 이미지">
+                                        </div>
+                                        <div class="card-custom-content-culture p-4 col-6">
+                                            <h4>술담화</h4>
+                                            <p>전통주 큐레이팅 서비스</p>
+                                            <a href="https://www.sooldamhwa.com/" class="link-custom" target="_blank">Join Now!</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 더술닷컴 -->
+                                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="card flex-row card-custom rounded-4 bg-base shadow-effect">
+                                        <div class="card-custom-image-culture rounded-4 col-6">
+                                            <img class="card-img-left img-fluid" src="./assets/images/the-sul-dot-com.png" alt="더술닷컴 이미지">
+                                        </div>
+                                        <div class="card-custom-content-culture p-4 col-6">
+                                            <h4>더술닷컴</h4>
+                                            <p>전통주 칼럼 읽어보기</p>
+                                            <a href="https://thesool.com/front/publication/M000000068/list.do" class="link-custom" target="_blank">Join Now!</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- 축제 및 박람회 소개 -->
+                        <div class="col-lg-6">
+
+                            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Liquor fair</h3>
+                            <div class="row gy-4">
+
+                                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="card flex-row card-custom rounded-4 bg-base shadow-effect">
+                                        <div class="card-custom-image-culture rounded-4 col-6">
+                                            <img class="card-img-left img-fluid" src="./assets/images/festival.jpg" alt="축제 이미지">
+                                        </div>
+                                        <div class="card-custom-content-culture p-4 col-6">
+                                            <h4>주류 축제 및 박람회</h4>
+                                            <p>2023년에는 어떤 주류 행사가<br>준비되어 있을까요?</p>
+                                            <a href="./culture.html" class="link-custom">Click to Read More!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <!-- //주류 관련 문화 -->
+
+            <!-- CONTACT -->
+            <section id="contact" class="full-height px-lg-5">
+                <div class="container">
+                    <div class="row justify-content-center text-center">
+                        <!-- contact의 제목부분 -->
+                        <div class="col-lg-8 pb-4" data-aos="fade-up">
+                            <h6 class="text-brand">CONTACT</h6>
+                            <h1>찾아오시는 길
+                            </h1>
+                        </div>
+                        <!-- contact의 제목 부분 끝-->
+
+                        <!-- contact의 전화번호, 이메일, 위치 관련 부분-->
+                        <div class="row mt-4">
+                            <!-- item1(전화번호 및 운영시간)-->
+                            <div class="col-md-4">
+                                <div class="contact-icon text-center">
+                                    <div class="single-icon">
+                                        <i class="bi bi-phone"></i>
+                                        <p>
+                                            전화번호: +82) 02-000-0000<br>
+                                            <span>월요일-금요일 (9am-5pm)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item2(이메일, 웹사이트 주소)-->
+                            <div class="col-md-4">
+                                <div class="contact-icon text-center">
+                                    <div class="single-icon">
+                                        <i class="bi bi-envelope"></i>
+                                        <p>
+                                            Email: example@swu.ac.kr<br>
+                                            <span>Web: www.example.com</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item3(위치) -->
+                            <div class="col-md-4">
+                                <div class="contact-icon text-center">
+                                    <div class="single-icon">
+                                        <i class="bi bi-geo-alt"></i>
+                                        <p>
+                                            위치: 서울여자대학교 50주년기념관<br>
+                                            <span>서울시 노원구, 대한민국</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- contact의 전화번호, 이메일, 위치 관련 부분 끝-->
+
+
+                        <!-- 좌측 구글 맵 -->
+                        <div class="col-md-6">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.9734134704577!2d127.09066417596944!3d37.6263131720232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cb91de277d145%3A0x57a8a7cc143ffb32!2z7ISc7Jq47Jes7J6Q64yA7ZWZ6rWQIDUw7KO864WE6riw64WQ6rSA!5e0!3m2!1sko!2skr!4v1686057628960!5m2!1sko!2skr"  width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <!-- 구글 맵 끝 -->
+
+                        <!-- Start  contact -->
+                        <div class="col-md-6">
+                            <div class="form contact-form">
+                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                </div>
+                                <div class="text-center my-3">
+                                    <button type="submit" class="btn btn-outline-light">SEND</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //CONTACT -->
+
+        </div>
+        <!-- // 콘텐츠 영역 끝-->
+
+        <!-- footer 영역 -->
+        <footer class="text-white text-center text-lg-start">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row mt-4">
+                    <!--Grid column1 : 팀 소개 및-->
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">About our team</h5>
+            
+                        <p>
+                        웹페이지저작수업에서 배운 HTML, CSS와 bootstrap을 통해 반응형 웹을 적용하는 것이 저희의 목표였습니다.
+                        </p>
+            
+                        <p>
+                        이 목표를 잘 이행하기 위해, 팀원들의 공통의 관심사인 '술'에 대한 페이지를 만들었습니다. 
+                        </p>
+            
+                        <div class="mt-4">
+                            <!-- Facebook -->
+                            <a type="button" class="btn btn-floating  btn-sm">
+                                <i class="bi bi-facebook fs-3"></i>
+                            </a>
+                            <!-- Twitter -->
+                            <a type="button" class="btn btn-floating btn-lg">
+                                <i class="bi bi-twitter fs-3"></i>
+                            </a>
+                            <!-- youtube -->
+                            <a type="button" class="btn btn-floating btn-lg">
+                                <i class="bi bi-youtube fs-3"></i>
+                            </a>
+                            <!-- linked in -->
+                            <a type="button" class="btn btn-floating  btn-lg">
+                                <i class="bi bi-linkedin fs-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid column1-->
+        
+                    <!--Grid column2 : 팀 구성원 부분-->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4 pb-1">Team members</h5>
+            
+                        <ul class="fa-ul" style="margin-left: 1.65em;">
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="bi bi-emoji-smile-fill"></i></span>
+                            <span class="ms-2">2020120159 김소연</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="bi bi-emoji-smile-upside-down-fill"></i></span>
+                            <span class="ms-2">2021111091 강민정</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="bi bi-emoji-smile-fill"></i></span>
+                            <span class="ms-2">2021111554 조주은</span>
+                        </li>
+                        </ul>
+                        <p>이름 순서는 아무것도 관련 없습니다.</p>
+                    </div>
+                    <!--Grid column2 끝-->
+        
+                    <!--Grid column3 : Opening Hours 부분-->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">Opening hours</h5>
+            
+                        <table class="table text-center text-white">
+                        <tbody class="fw-normal">
+                            <tr>
+                            <td>Mon - Thu:</td>
+                            <td>8am - 6pm</td>
+                            </tr>
+                            <tr>
+                            <td>Fri :</td>
+                            <td>10am - 1pm</td>
+                            </tr>
+                            <tr>
+                            <td>Sat - Sun:</td>
+                            <td>No open</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                    <!--Grid column3 끝-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+        
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2023-1 웹페이지저작기초 :
+                <a class="text-white" href="">버드와이조 - 7조</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- footer 영역 끝 -->
+    
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
