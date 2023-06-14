@@ -1,0 +1,260 @@
+:root {
+    --color-body: #F4EEE0;
+    --color-heading: white;
+    --color-base: #4F4557;
+    --color-base2: #393646;
+    --color-brand: #6D5D6E;
+    --color-brand2: #19376D;
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree";
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-header {
+    margin-bottom: 60px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-header::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 5px;
+    background: #f82249;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+/* NavBar */
+nav {
+    background-color: var(--color-base);
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+    color : #fff;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-brand);
+}
+
+.navbar .nav-link.active {
+    color: var(--color-brand);
+}
+
+
+/* making : 소주 제조 과정 부분 */
+#making {
+    width: 100%;
+    height: 100vh;
+    background-color : var(--color-base);
+    overflow: hidden;
+    position: relative;
+}
+
+#making .making-container {
+    position: absolute;
+    bottom : 0;
+    left : 0;
+    top : 90px;
+    right : 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+}
+
+#making h1 {
+    color : #fff;
+    font-family : var(--font-base);
+    font-size : 56px;
+    font-weight: 600;
+}
+#making h1 span {
+    color: #f82249;
+}
+#making p {
+    color: #ebebeb;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* history : 소주 역사 부분 */
+#faq {
+    padding: 60px 0;
+}
+
+#faq .faq-list {
+    padding: 0;
+    list-style: none;
+}
+
+#faq .faq-list li {
+    border-bottom: 1px solid #e9eaed;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+#faq .faq-list .question {
+    display: block;
+    position: relative;
+    font-family: #f82249;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-left: 25px;
+    cursor: pointer;
+    color: #e0072f;
+    transition: 0.3s;
+}
+
+#faq .faq-list i {
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+#faq .faq-list p {
+    margin-bottom: 0;
+    padding: 10px 0 0 25px;
+}
+
+#faq .faq-list .icon-show {
+    display: none;
+}
+
+#faq .faq-list .collapsed {
+    color: black;
+}
+
+#faq .faq-list .collapsed:hover {
+    color: #f82249;
+}
+
+#faq .faq-list .collapsed .icon-show {
+    display: inline-block;
+    transition: 0.6s;
+}
+
+#faq .faq-list .collapsed .icon-close {
+    display: none;
+    transition: 0.6s;
+}
+
+
+/* brand & product : 다양한 브랜드 및 제품 부분 */
+#brand {
+    padding : 60px 0;
+}
+
+#brand .brand-wrap {
+    border-top: 1px solid #e0e5fa;
+    border-left: 1px solid #e0e5fa;
+    margin-bottom: 30px;
+}
+
+#brand .brand-logo {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #e0e5fa;
+    border-bottom: 1px solid #e0e5fa;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.5);
+    height: 160px;
+}
+
+#brand .brand-logo:hover img {
+    transform: scale(1.2);
+}
+
+#brand img {
+    transition: all 0.4s ease-in-out;
+}
+
+.brand-text {
+    font-family: 'Diphylleia', serif;
+}
+
+
+/* foods : 어울리는 안주 부분 */
+#foods {
+    padding : 60px 0;
+}
+
+#foods .section-header p {
+    text-align: center;
+}
+
+#foods .container-fluid {
+    margin-bottom: 3px;
+}
+
+#foods .foods-container {
+    padding-right: 12px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#foods .food {
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    height: 350px;
+}
+
+
+#foods .food:hover img {
+    transition: all ease-in-out 0.4s;
+}
+#foods .food:hover img {
+    transform: scale(1.1);
+}
+
+
+/* 디스커스 광고 제거 */
+div#disqus_thread iframe[sandbox] {
+    max-height: 0px !important;
+    }
+
+    
+/* footer */
+footer {
+    background-color: var(--color-base);
+    text-align: center;
+}
+
